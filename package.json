@@ -4,7 +4,8 @@
   "description": "Website fontend clone using Tailwindcss",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tailwindcss -i ./input.css -o ./dist/output.css ",
+    "watch" : "npx tailwindcss -i ./input.css -o ./dist/output.css --watch"
   },
   "author": "",
   "license": "ISC",
