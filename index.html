@@ -19,11 +19,73 @@
       <div class="flex items-center justify-between space-x-20 my-6">
         <!-- Logo -->
         <div class="z-30">
-          <img src="./images" id="logo" alt="">
+          <img src="./images/logo-bookmark.svg" id="logo" alt="" />
         </div>
-
         <!-- Menu Items -->
+        <div
+          class="hidden md:flex items-center space-x-10 uppercase text-slate-500"
+        >
+          <a href="#features" class="tracking-widest hover:text-red-200">
+            Features
+          </a>
+          <a href="#download" class="tracking-widest hover:text-red-200">
+            download
+          </a>
+          <a href="#faq" class="tracking-widest hover:text-red-200"> FAQ </a>
+          <button
+            class="uppercase rounded-md bg-red-500 text-white p-3 px-8 border-2 hover:border-red-500 hover:bg-white hover:text-red-400"
+          >
+            Login
+          </button>
+        </div>
       </div>
     </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Container for Image and Content -->
+      <div
+        class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0"
+      >
+        <!-- Content -->
+        <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+          <h1 class="text-3xl font-bold text-center lg:text-6xl lg:text-left">
+            A Simple Bookmark Manager
+          </h1>
+          <p
+            class="max-w-md mx-auto text-lg text-center text-gray-400 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0"
+          >
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <!-- buttons -->
+          <div
+            class="flex items-center justify-center w-full space-x-4 lg:justify-start"
+          >
+            <a
+              href=""
+              class="p-4 text-sm font-semibold border-2 text-white bg-blue-700 rounded shadow-md hover:bg-white hover:text-blue-600"
+              >Get It on Chrome</a
+            >
+            <a
+              href=""
+              class="p-4 text-sm font-semibold border-2 text-black bg-white rounded shadow-md hover:bg-white hover:text-blue-600"
+              >Get It on Firefox</a
+            >
+          </div>
+          <div></div>
+        </div>
+        <!-- Image -->
+        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+          <div class="bg-hero"></div>
+          <img
+            src="images/illustration-hero.svg"
+            alt="Hero Image"
+            class="relative lg:top-24 xl:top-0 z-10 overflow-x-visible"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
