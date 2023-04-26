@@ -516,13 +516,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.border {
-  border-width: 1px;
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+.border {
+  border-width: 1px;
 }
 
 .text-3xl {
