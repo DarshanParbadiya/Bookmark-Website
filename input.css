@@ -16,3 +16,50 @@
     @apply absolute rounded-r-full top-60 bg-blue-600;
   }
 }
+
+.hamburger {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  height: 3px;
+  width: 24px;
+  background-color: black;
+  top: 0;
+  left: 0;
+
+  transition: ease;
+  transition-duration: 300ms;
+}
+
+.hamburger-middle {
+  top: 8px;
+  transition: ease;
+  transition-duration: 300ms;
+}
+.hamburger-bottom {
+  top: 16px;
+  transition: ease;
+  transition-duration: 300ms;
+}
+
+.open {
+  @apply rotate-90;
+}
+
+.open .hamburger-middle {
+  @apply hidden ;
+}
+
+.open .hamburger-top {
+  @apply rotate-45 translate-y-3 bg-white;
+}
+
+.open .hamburger-bottom {
+  @apply -rotate-45 -translate-y-1 bg-white;
+}

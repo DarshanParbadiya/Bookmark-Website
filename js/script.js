@@ -28,3 +28,32 @@ document.getElementById('panels')
 .getElementsByClassName(classString)[0]
 .classList.remove('hidden')
 }
+
+
+
+// ------------- hamburger menu -----------------
+
+const menuBtn = document.getElementById('menu-btn')
+const menu = document.getElementById('menu')
+ 
+menuBtn.addEventListener('click',toggleBtn)
+
+//----------------- Swapping Logo -------------------
+
+const logo = document.getElementById('logo')
+
+function toggleBtn(){
+  menuBtn.classList.toggle('open')
+  menu.classList.toggle('hidden')
+  menu.classList.toggle('white-logo')
+  if(menu.classList.contains('white-logo')){
+    logo.setAttribute('src','./images/logo-bookmark-footer.svg')
+
+  }
+  else{
+    logo.setAttribute('src',"./images/logo-bookmark.svg")
+  }
+  
+  
+}  
+
