@@ -19,7 +19,7 @@
       <!-- Flex container for Nav items -->
       <div class="flex items-center justify-between space-x-20 my-6">
         <!-- Logo -->
-        <div class="z-30 w-[250px]">
+        <div class="z-30 lg:w-[250px] sm:w-[150px] shrink-0">
           <img src="./images/logo-company.png" id="logo" alt="" />
         </div>
         <!-- Menu Items -->
@@ -27,16 +27,21 @@
           class="hidden md:flex items-center space-x-10 uppercase text-slate-500"
         >
           <a href="#features" class="tracking-widest hover:text-red-200">
+            Home
+          </a>
+          <a href="#features" class="tracking-widest hover:text-red-200">
             Features
           </a>
           <a href="#download" class="tracking-widest hover:text-red-200">
-            download
+            About Us
           </a>
-          <a href="#faq" class="tracking-widest hover:text-red-200"> FAQ </a>
+          <a href="#faq" class="tracking-widest hover:text-red-200">
+            Services
+          </a>
           <button
             class="uppercase rounded-md bg-red-500 text-white p-3 px-8 border-2 hover:border-red-500 hover:bg-white hover:text-red-400"
           >
-            Login
+            Contact Us
           </button>
         </div>
         <div class="z-30 flex md:hidden">
@@ -82,7 +87,9 @@
           <p
             class="max-w-md mx-auto text-lg text-center text-gray-400 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0"
           >
-          We design and develop mobile apps that delight your users and grow your business. Enterprise-grade development combined with outstanding design.
+            We design and develop mobile apps that delight your users and grow
+            your business. Enterprise-grade development combined with
+            outstanding design.
           </p>
           <!-- buttons -->
           <div
@@ -600,42 +607,92 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="p-16 bg-blue-950">
+    <!-- Footer bg-blue-950 bg-[#F4F8FB] -->
+    <footer
+      class="p-20 pb-10 md:p-20 xl:p-20 bg-blue-950 bg-[#F4F8FB] text-slate-500"
+    >
       <!-- Footer flex container -->
       <div
-        class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
+        class="flex flex-col items-start mx-auto space-y-16 px-2 lg:flex-row md:space-y-0"
       >
-        <!-- Logo/Menu Container -->
-        <div
-          class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14"
-        >
-          <img src="./images/logo-bookmark-footer.svg" alt="" />
-          <a
-            href="#features"
-            class="text-gray-500 font-semibold uppercase hover:text-red-400"
-            >Features</a
-          >
-          <a
-            href="#download"
-            class="text-gray-500 font-semibold uppercase hover:text-red-400"
-            >Download</a
-          >
-          <a
-            href="#faq"
-            class="text-gray-500 font-semibold uppercase hover:text-red-400"
-            >FAQ</a
-          >
+        <!-- logo Text Container -->
+        <div class="flex flex-col md:max-w-md lg:max-w-xs">
+          <img
+            class="rounded-lg"
+            src="./images/logo-company.png"
+            width="200px"
+            alt="Epsilon Tech"
+          />
+          <div class="mt-6">
+            We design and develop mobile apps that delight your users and grow
+            your business. Enterprise-grade development combined with
+            outstanding design.
+          </div>
         </div>
+
+        <!-- Links and ContactUs -->
+        <div
+          class="w-full flex flex-col md:flex-row sm:pt-10 lg:pt-0 md:space-x-6"
+        >
+          <!-- Links -->
+          <div
+            class="w-full flex flex-row md:space-x-4 justify-between lg:justify-around items-start"
+          >
+            <!-- helpful links -->
+            <div class="shrink-0">
+              <h1 class="text-lg">Helpful Links</h1>
+              <!-- Links -->
+              <div class="flex flex-col text-sm mt-6 space-y-2">
+                <a href="">Our Work</a>
+                <a href="">About Us</a>
+                <a href="">Services</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+              </div>
+            </div>
+            <!-- Latest Apps -->
+            <div class="shrink-0">
+              <h1 class="text-lg">Latest Apps</h1>
+
+              <div class="flex flex-col text-sm mt-6 space-y-2">
+                <a href="">Dance School</a>
+                <a href="">Coiner</a>
+                <a href="">Cloud Manager</a>
+                <a href="">Coding Life</a>
+                <a href="">Smart Office</a>
+              </div>
+            </div>
+            <!-- ContactUs -->
+            <div
+              class="shrink max-w-sm mt-10 md:mt-0 md:max-w-xs sm:hidden md:block"
+            >
+              <!-- title -->
+              <h1 class="text-xl">Contact Us</h1>
+              <div>
+                <!-- Connect Us info -->
+                <p class="mt-5 text-sm">
+                  B-59, Sumeru City Mall, opp- Krishna township, Yamuna chowk,
+                  mota varachha, Surat - 394101
+                </p>
+                <p>Phone: (272) 211-7370</p>
+                <p>
+                  E-Mail:
+                  <a class="text-blue-700" href="">epsilontechapp@contactUs</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Social Container -->
-        <div class="flex space-x-10">
+        <!-- <div class="flex space-x-10">
           <a href="#">
             <img src="images//icon-facebook.svg" class="" alt="" />
           </a>
           <a href="#">
             <img src="images//icon-twitter.svg" class="" alt="" />
           </a>
-        </div>
+        </div> -->
       </div>
     </footer>
   </body>
