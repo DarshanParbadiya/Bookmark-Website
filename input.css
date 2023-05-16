@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.blue-gradient{
+  background : linear-gradient(127deg, #384DFF 0%, #24CDFF 91%);
+} 
+
+.about-items:hover{
+  background : linear-gradient(127deg, #384DFF 0%, #24CDFF 91%);
+  color: white;
+}
+
+
+
 @media screen(lg) {
   .bg-hero {
     width: 2000px;
